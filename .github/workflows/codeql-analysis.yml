@@ -72,7 +72,7 @@ jobs:
     - name: Commit and Push
       run: |
         git config --global user.name 'MaryThurmond'
-        git config --global user.email 'your-email@example.com'
+        git config --global user.email 'thurmondme@gmail.com'
         git add . 
         git commit -m "Your commit message"
-        git push https://${{ PagesMT }}@github.com/${GITHUB_REPOSITORY} HEAD:main
+        git push https://PagesMT@github.com/MaryThurmond/ScoutingPASS HEAD:main
