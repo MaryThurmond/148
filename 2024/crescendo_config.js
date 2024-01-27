@@ -3,7 +3,7 @@
 var config_data = `
 {
   "dataFormat": "tsv",
-  "title": "Scouting PASS 2024",
+  "title": "148 Scouting 2024",
   "page_title": "Crescendo",
   "checkboxAs": "10",
   "prematch": [
@@ -56,14 +56,6 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -133,11 +125,14 @@ var config_data = `
         "p": "Parked<br>",
         "o": "Onstage<br>",
         "s": "Onstage (Spotlit)<br>",
-        "h": "Harmony<br>",
         "a": "Attempted but failed<br>",
         "x": "Not attempted"
       },
       "defaultValue": "x"
+    },
+    { "name": "Harmonized?",
+      "code": "har",
+      "type": "bool"
     },
     { "name": "Note in Trap",
       "code": "nit",
