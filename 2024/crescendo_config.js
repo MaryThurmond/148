@@ -54,14 +54,6 @@ var config_data = `
       "type": "team",
       "min": 1,
       "max": 99999
-    },
-    { "name": "Auto Start Position",
-      "code": "as",
-      "type": "clickable_image",
-      "filename": "2024/field_image.png",
-      "clickRestriction": "one",
-      "allowableResponses": "1 12 13 24 25 36 37 48 49 60 61 72",
-      "shape": "circle 5 black red true"
     }
   ],
   "auton": [
@@ -73,8 +65,16 @@ var config_data = `
       "code": "aas",
       "type": "counter"
     },
+        { "name": "Amp Misses",
+      "code": "aam",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "ass",
+      "type": "counter"
+    },
+      { "name": "Speaker Misses",
+      "code": "asm",
       "type": "counter"
     }
   ],
@@ -83,8 +83,16 @@ var config_data = `
       "code": "tas",
       "type": "counter"
     },
+    { "name": "Amp Misses",
+      "code": "tam",
+      "type": "counter"
+    },
     { "name": "Speaker Scores",
       "code": "tss",
+      "type": "counter"
+    },
+    { "name": "Speaker Misses",
+      "code": "tsm",
       "type": "counter"
     },
     { "name": "Times Amplified",
