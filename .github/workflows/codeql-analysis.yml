@@ -68,3 +68,11 @@ jobs:
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
+
+    - name: Commit and Push
+      run: |
+        git config --global user.name 'MaryThurmond'
+        git config --global user.email 'your-email@example.com'
+        git add . 
+        git commit -m "Your commit message"
+        git push https://${{ PagesMT }}@github.com/${GITHUB_REPOSITORY} HEAD:your-branch-name
