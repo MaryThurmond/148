@@ -75,4 +75,4 @@ jobs:
         git config --global user.email 'thurmondme@gmail.com'
         git add . 
         git commit -m "Your commit message"
-        git push https://PagesMT@github.com/MaryThurmond/ScoutingPASS HEAD:main
+        git push https://GH_PAGES_TOKEN@github.com/MaryThurmond/ScoutingPASS HEAD:main
